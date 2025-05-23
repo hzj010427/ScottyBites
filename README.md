@@ -11,21 +11,15 @@ Visit Sigrid at https://sigrid-says.com/cmusvfse
 
 ## Repo Artificats
 
-### Architecture Haiku (add link to Google doc)
+### Architecture Haiku
 
 <https://docs.google.com/document/d/1iPvOHCMpxsJlabHvvsAFeAkA4XXSSayNUdA4vZ2nc6k/edit?tab=t.0#heading=h.1hx1z45xk9he>
 
-### Kanban Board (add link to your board)
+### Kanban Board
 
 <https://github.com/orgs/cmu-fse/projects/4/views/1>
 
-### Team Use Case Cards
-
-- TUC 1 (add link to TUC card)
-- TUC 2 (add link to TUC card)
-- ...
-
-### OOA Artifacts (add link to Google folder)
+### OOA Artifacts
 
 <https://drive.google.com/drive/u/0/folders/10eMTaf2HvVJRA7wSONXodRcF4kY-gQJl?ths=true>
 
