@@ -1,0 +1,22 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "type": "node",
+      "request": "launch",
+      "name": "YACA Server",
+      "skipFiles": [
+        "${workspaceFolder}/node_modules/**/*.*",
+        "<node_internals>/**"
+      ],
+      "preLaunchTask": "npm: build:server",
+      "sourceMaps": true,
+      "program": "${workspaceFolder}/.server.debug/server/serve",
+      "outFiles": ["${workspaceFolder}/.server.debug/server/**/*.js"],
+    }
+  ],
+  "[html]": {
+    "editor.defaultFormatter": "esbenp.prettier-vscode"
+  },
+  "editor.formatOnSave": true
+}

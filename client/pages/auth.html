@@ -1,0 +1,241 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="author" content="s25-team-a2" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="18652 class project" />
+    <!-- Bootstrap -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"
+    />
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Protest+Riot&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Custom CSS -->
+    <link href="../styles.css" rel="stylesheet" type="text/css" />
+    <title>ScottyBites Auth</title>
+    <!-- Client Script -->
+    <script src="../scripts/auth.ts" type="module" defer=""></script>
+  </head>
+
+  <body>
+    <!-- Back Button -->
+    <button
+      class="btn btn-sm btn-primary position-fixed top-0 start-0 m-3"
+      onclick="window.location.href = '/'"
+      >Back</button
+    >
+    <div
+      class="container d-flex justify-content-center align-items-center vh-100"
+    >
+      <!-- Center the content vertically -->
+      <div class="centered-content vw-100">
+        <!-- Title -->
+        <div class="row d-flex justify-content-center">
+          <div class="col col-xl-4 col-lg-5 col-md-6 col-sm-8 col-10">
+            <h1 class="text-center mb-5 user-select-none">ScottyBites</h1>
+            <br />
+          </div>
+        </div>
+        <!-- Welcome greetings -->
+        <div class="row">
+          <div class="col">
+            <h2 class="text-center mb-4 user-select-none"
+              >Login / Register Here</h2
+            >
+            <p class="text-center mb-4 user-select-none"
+              >Welcome back! You've been missed!</p
+            >
+          </div>
+        </div>
+        <!-- Login/Register Form -->
+        <form class="row justify-content-center" id="authForm">
+          <div class="col col-xl-4 col-lg-5 col-md-6 col-sm-8 col-10">
+            <div class="input-group mb-3">
+              <input
+                type="text"
+                class="form-control"
+                placeholder="CMU Email (For Register Only)"
+                aria-label="email"
+                aria-describedby="basic-addon2"
+                name="email"
+              />
+            </div>
+            <input
+              type="text"
+              class="form-control mb-3"
+              placeholder="Username"
+              aria-label="Username"
+              name="username"
+            />
+            <input
+              type="password"
+              class="form-control mb-3"
+              placeholder="Password"
+              aria-label="Password"
+              name="password"
+            />
+            <div class="d-flex justify-content-center">
+              <button
+                type="submit"
+                class="btn btn-lg btn-primary"
+                id="submitButton"
+                >Login / Register</button
+              >
+            </div>
+          </div>
+        </form>
+      </div>
+    </div>
+
+    <!-- Terms modal -->
+    <div
+      class="modal fade"
+      id="termsModal"
+      tabindex="-1"
+      aria-hidden="true"
+      data-bs-backdrop="static"
+      data-bs-keyboard="false"
+    >
+      <div class="modal-dialog modal-dialog-centered modal-dialog-scrollable">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h3 class="modal-title text-center">terms and conditions</h3>
+          </div>
+          <div class="modal-body fs-8">
+            <h5>1. acceptance of terms</h5>
+            <p
+              >by signing up for scottybites, you agree to comply with these
+              terms and conditions. if you do not agree, please do not use our
+              services.</p
+            >
+
+            <h5>2. user accounts</h5>
+            <ul>
+              <li
+                >you must provide accurate and up-to-date information when
+                registering.</li
+              >
+              <li
+                >you are responsible for maintaining the confidentiality of your
+                login credentials.</li
+              >
+              <li
+                >you must be at least 18 years old or have parental consent to
+                use scottybites.</li
+              >
+            </ul>
+
+            <h5>3. acceptable use</h5>
+            <p
+              >scottybites is a community-driven platform, and we expect all
+              users to interact respectfully. you agree not to:</p
+            >
+            <ul>
+              <li>post misleading, offensive, or inappropriate content.</li>
+              <li>spam or promote unrelated content.</li>
+              <li>engage in fraudulent activities (e.g., fake reviews).</li>
+              <li>attempt to access another user's account or data.</li>
+            </ul>
+
+            <h5>4. food safety disclaimer</h5>
+            <ul>
+              <li
+                >scottybites is a community-based app where users share food
+                recommendations.</li
+              >
+              <li
+                >we do not prepare, sell, or deliver food and cannot guarantee
+                the safety, quality, or accuracy of meals posted.
+              </li>
+              <li
+                >users are responsible for verifying allergen information and
+                food safety guidelines before consuming any food recommended on
+                the platform.</li
+              >
+            </ul>
+
+            <h5>5. privacy & data protection</h5>
+            <p
+              >we value your privacy! please review our privacy policy to
+              understand how we collect, use, and protect your data.</p
+            >
+
+            <h5>6. account suspension & termination</h5>
+            <p
+              >we may suspend or terminate accounts that violate these terms,
+              including but not limited to:</p
+            >
+            <ul>
+              <li>posting harmful, offensive, or inappropriate content.</li>
+              <li>engaging in fraudulent or abusive behavior.</li>
+              <li
+                >attempting to disrupt or manipulate the scottybites
+                platform.</li
+              >
+            </ul>
+
+            <h5>7. changes to terms</h5>
+            <p
+              >we may update these terms from time to time. if significant
+              changes occur, we will notify you. continued use of scottybites
+              means you accept the updated terms.</p
+            >
+
+            <h5>8. contact us</h5>
+            <p
+              >if you have any questions about these terms, please reach out to
+              us at
+              <a href="mailto:scottybites0205@gmail.com"
+                >scottybites0205@gmail.com</a
+              >.
+            </p>
+            <div class="row">
+              <div class="col d-flex justify-content-center gap-4 p-4">
+                <button
+                  type="button"
+                  id="ackButton"
+                  class="btn btn-lg btn-primary flex-grow-1 p-2"
+                >
+                  Agree
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Toast -->
+    <div
+      id="toast"
+      class="toast align-items-center border-0 mb-2 position-fixed bottom-0 start-50 translate-middle-x"
+      role="alert"
+      aria-live="assertive"
+      aria-atomic="true"
+    >
+      <div
+        class="alert alert-danger mb-0 d-flex justify-content-between align-items-center"
+      >
+        <span id="alertMsg"></span>
+        <button
+          type="button"
+          class="btn-close"
+          data-bs-dismiss="toast"
+          aria-label="Close"
+        ></button>
+      </div>
+    </div>
+  </body>
+</html>

@@ -1,0 +1,479 @@
+:root {
+  --primary-color: #c41230;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-family: 'Protest Riot', sans-serif;
+  font-size: 3em;
+  color: var(--primary-color);
+}
+
+h2 {
+  color: var(--primary-color);
+}
+
+h3 {
+  color: var(--primary-color);
+}
+
+h4 {
+  color: var(--primary-color);
+}
+
+.text-bg-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.text-primary {
+  color: var(--primary-color) !important;
+}
+
+.bg-primary {
+  background-color: var(--primary-color)  !important;
+}
+
+.badge-primary {
+  background-color: var(--primary-color) !important;
+}
+
+.offcanvas-custom {
+  font-family: 'Protest Riot', sans-serif;
+  color: var(--primary-color);
+}
+
+.border-primary {
+  border-color: var(--primary-color) !important;
+}
+
+.menu-link {
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+  transition:
+    background-color 0.2s ease-in-out,
+    box-shadow 0.2s ease-in-out;
+}
+
+.menu-link:hover {
+  background-color: rgba(196, 18, 48, 0.1);
+  box-shadow: 0px 4px 8px rgba(196, 18, 48, 0.2);
+  border: 2px solid var(--primary-color);
+  color: var(--primary-color);
+}
+
+.logout-button {
+  background-color: #e0e0e0;
+  color: #6c757d;
+  border: none;
+}
+
+.logout-button:hover {
+  background-color: #d6d6d6;
+  color: var(--primary-color);
+}
+
+.text-danger {
+  color: #c41230;
+}
+
+.btn-primary {
+  background-color: var(--primary-color);
+  border-color: #c41230;
+  color: #fff;
+}
+
+.btn-primary:hover {
+  background-color: #a41230;
+  border-color: #a41230;
+  color: #fff;
+}
+
+.btn-primary:active {
+  background-color: #841230 !important;
+  border-color: #841230 !important;
+  color: #fff !important;
+}
+
+.btn-link {
+  color: var(--primary-color);
+}
+
+.btn-link:hover {
+  color: #841230;
+  cursor: pointer;
+}
+
+.btn-primary:active {
+  color: #841230;
+}
+
+.form-control:focus {
+  box-shadow: none;
+  border: 2px solid var(--primary-color);
+}
+
+.form-select:focus {
+  box-shadow: none;
+  border: 2px solid var(--primary-color);
+}
+
+.otp-input {
+  width: 40px;
+  height: 40px;
+}
+
+.otp-card {
+  border: none;
+  height: 300px;
+  box-shadow: 0px 5px 20px 0px #d2dae3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.profile-avatar {
+  width: 120px;
+  aspect-ratio: 1;
+  border-radius: 50%;
+  padding: 2px;
+  border: 2px solid var(--primary-color);
+  box-shadow: #6c757d 0 0 5px;
+}
+
+.add-btn-hover:hover {
+  border-color: #c8102e !important;
+  background-color: transparent !important;
+}
+
+/* Ensure the restaurant list is centered and cards are in a single column */
+#restaurant-list {
+  margin-top: 20px;
+}
+
+/* Ensure text truncation for long names */
+.card-title {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.restaurant-card {
+  width: 90%;
+  max-width: 550px;
+  margin: 0 auto;
+}
+
+/* Center all text inside the card */
+.restaurant-card .card-body,
+.restaurant-card .row,
+.restaurant-card p,
+.restaurant-card h5 {
+  text-align: center;
+}
+
+/* Improve spacing between elements */
+.restaurant-card .card-title {
+  font-family: 'Protest Riot', sans-serif;
+  margin-bottom: 12px;
+  /* More spacing below the name */
+  color: #c41230;
+}
+
+.restaurant-card .rating-container {
+  justify-content: center;
+  margin-bottom: 12px;
+  /* More space below rating */
+}
+
+.restaurant-card .cuisine {
+  margin-bottom: 15px; /* More space below cuisine */
+}
+
+.restaurant-card .location {
+  margin-top: 26px;
+  /* Increased top margin for location */
+}
+
+/* Style "Location:" for emphasis */
+.location-label {
+  font-weight: 700;
+  /* Make it bold */
+  color: #555;
+  text-transform: uppercase;
+  /* Optional: Uppercase for emphasis */
+}
+
+/* Style location details */
+.location-details {
+  font-weight: 500;
+  /* Slightly bold but less than label */
+  color: #555;
+  /* Dark gray for subtle contrast */
+  font-style: italic;
+  /* Optional: Add italics for differentiation */
+}
+
+/* Keep the image a square without breaking the row */
+.restaurant-card .imageDiv {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* Set image to be a fixed square inside the column */
+.restaurant-card .imageDiv img {
+  width: 100%; /* Make it fill the container */
+  max-width: 220px; /* Adjust size as needed */
+  height: 26vw; /* Match width for a square */
+  max-height: 150px;
+  object-fit: cover; /* Prevent distortion */
+  border-radius: 8px; /* Optional: Keep rounded corners */
+}
+
+/* Use 'Protest Riot' font for the restaurant name */
+.restaurant-name {
+  font-family: 'Protest Riot', sans-serif;
+}
+
+/* Center align location & description */
+.restaurant-info {
+  text-align: center;
+}
+
+/* Ensure image is responsive but does not grow too large */
+.restaurant-profile-image {
+  width: 100%;
+  /* Default: Make it responsive */
+  max-width: 600px;
+  /* Restrict the maximum width */
+  height: auto;
+  /* Maintain aspect ratio */
+  display: block;
+  margin: 0 auto;
+  /* Center the image */
+}
+
+/* Contact information section */
+.contact-info {
+  text-align: center;
+}
+
+.contact-info .contactInfoDiv {
+  color: #555;
+  margin-bottom: 20px;
+}
+
+/* Style the links for email & website */
+.contact-link {
+  color: #007bff;
+  /* Bootstrap blue */
+  text-decoration: none;
+}
+
+.contact-link:hover {
+  text-decoration: underline;
+}
+
+/* Remove card border and shadow, and add a grey separator */
+.separator {
+  border: none;
+  height: 1px;
+  background-color: #ccc;
+  /* Light grey separator line */
+  width: 80%;
+  /* Adjust width for better visual balance */
+  margin: 20px auto;
+  /* Space around the line */
+}
+
+.edit-profile-dropdown {
+  max-height: 25vh;
+  overflow-y: auto;
+}
+
+.food-badge {
+  background-color: var(--primary-color);
+  font-family: 'Poppins', sans-serif;
+  font-weight: normal;
+}
+
+.nav-link {
+  color: #000000;
+}
+
+.nav-link:hover {
+  color: var(--primary-color);
+  cursor: pointer;
+}
+
+.nav-link:active {
+  color: var(--primary-color) !important;
+}
+
+/* Style for Post */
+.post-main,
+.post-gallery-main,
+.create-post {
+  height: calc(100vh - 128px);
+  margin-top: 68px;
+  margin-bottom: 60px;
+  overflow: auto;
+}
+
+.image-dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #ccc;
+  transition: background-color 0.3s;
+  margin-right: 0.5rem;
+}
+
+.image-dot.active {
+  background-color: #c41230;
+}
+
+.gallery-footer-container {
+  gap: 8rem;
+}
+
+.gallery-footer-btn {
+  width: 40px;
+  height: 40px;
+}
+
+.tooltip-position {
+  top: -2.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  white-space: nowrap;
+  z-index: 1000;
+}
+
+.comment-section {
+  max-height: 70vh;
+  overflow-y: auto;
+  z-Index: 9999;
+}
+
+.btn-outline-primary {
+  color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.btn-outline-primary:hover {
+  background-color: var(--primary-color);
+  color: #fff;
+  border-color: var(--primary-color);
+}
+
+.upload-container {
+  transition: background-color 0.3s, border-color 0.3s;
+}
+
+.upload-container:hover {
+  background-color: #f8f9fa;
+  border-color: var(--primary-color) !important;
+}
+
+.biz-name {
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  max-width: 100%;
+}
+
+/* Style for Map */
+#map {
+  height: 100vh; /* Full height */
+  width: 100vw; /* Full width */
+}
+
+#map-back-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 1000; /* Ensure it stays above the map */
+}
+
+.map-popup-content {
+  text-align: center;
+}
+
+/* Restaurant name */
+.map-popup-content .popup-name {
+  margin: 0;
+  color: #c41230;
+  font-size: 20px;
+  font-weight: bold;
+  font-family: 'Protest Riot', sans-serif;;
+}
+
+/* Category */
+.map-popup-content .popup-category {
+  margin: 4px 0;
+  font-size: 13px;
+  font-weight: 500;
+  color: #555;
+  font-style: italic;
+}
+
+/* Address */
+.map-popup-content .popup-address {
+  margin: 0;
+  font-size: 13px;
+  color: #333;
+}
+
+/* Notification */
+@keyframes slideDown {
+  0% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+  10% {
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(0);
+  }
+}
+
+@keyframes slideUp {
+  0% {
+    transform: translateY(0);
+    opacity: 1;
+  }
+  100% {
+    transform: translateY(-100%);
+    opacity: 0;
+  }
+}
+
+.notification-popup {
+  animation: slideDown 0.5s ease-out forwards;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  right: 1rem;
+  max-width: 100%;
+  z-index: 9999;
+  transition: all 0.3s ease-in-out;
+}
+.notification-popup.hide {
+  animation: slideUp 0.5s ease-in forwards;
+}
+
+.notification-popup img:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
+  transition: all 0.2s ease-in-out;
+}
+
+.notification-popup button:hover {
+  transform: scale(1.2);
+  transition: all 0.2s ease-in-out;
+}
